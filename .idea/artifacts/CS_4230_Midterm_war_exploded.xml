@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CS-4230-Midterm:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/CS_4230_Midterm_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CS-4230-Midterm/web/Web" />
+    </root>
+  </artifact>
+</component>

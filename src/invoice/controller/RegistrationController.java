@@ -21,7 +21,9 @@ public class RegistrationController extends HttpServlet {
 		String password = request.getParameter("password");
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName"); 
-		
+
+
+
 		RequestDispatcher dispatcher = request.getRequestDispatcher("error/register_error.jsp");
 		try {
 			AuthenticationModel.registerUser(username, password, firstName, lastName);
