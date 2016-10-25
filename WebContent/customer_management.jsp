@@ -11,8 +11,12 @@
     <title>Customer Management</title>
 </head>
 <body>
-    <h1>Customer Management</h1>
-    <hr/>
 
+<c:forEach var="customer" items="${result.customer}">
+    <tr>
+        <td><c:out value="${customer.name}"/></td>
+        <td><c:out value="${customer.address}"/></td>
+    </tr>
+</c:forEach>
 </body>
 </html>
