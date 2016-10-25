@@ -4,9 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Parts Page</title>
 </head>
 <body>
 
+
+<table border="1" width="50%">
+    <tr>
+        <th>Part Number</th>
+        <th>Part Description</th>
+        <th>Cost</th>
+    </tr>
+    <c:forEach var="part" items="${result.parts}">
+        <tr>
+            <td><c:out value="${part.part__item}"/></td>
+            <td><c:out value="${part.part_description}"/></td>
+            <td><c:out value="${part.cost}"/></td>
+        </tr>
+    </c:forEach>
+</table>
 </body>
 </html>
